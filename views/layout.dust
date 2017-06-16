@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+  <head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://use.fontawesome.com/cf6053d338.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12 "id="n1">
+            {+navbar/}
+          </div>
+          <div class="col-xs-12"id="n2">
+            {+about/}
+          </div>
+          <div class="col-xs-12"id="n3">
+            {+headerGallery/}
+          </div>
+          <div class="col-xs-12"id="n3">
+            {+gallery/}
+          </div>
+          <div class="col-xs-12"id="n4">
+            {+headerBlog/}
+          </div>
+          <div class="col-xs-12"id="n4">
+            {+body /}
+          </div>
+          <div class="col-xs-12"id="n1">
+            {+links/}
+            <hr>
+            {+footer/}
+          </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- First include jquery js -->
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <!-- Then include bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
+  </body>
+</html>

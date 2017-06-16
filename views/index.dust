@@ -1,0 +1,328 @@
+{>"layout"/}
+{<navbar}
+<nav class="navbar navbar-default navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Ahsan</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#n2">About</a></li>
+        <li><a href="#n3">portfolio</a></li>
+        <li><a href="#n4">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#links">Links</a></li>
+        <li><a href="#">Log in</a></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+{/navbar}
+
+{<about}
+<div class="container">
+  <img src="images/header.jpg" alt="">
+</div>
+<div class="col-xs-12 container" id="n3">
+</br></br></br>
+
+
+  <hr>
+  <h2>About me</h2>
+  <p> Current student in <strong>CUNY Lehman College</strong> enrolled in Computer Science, B.S. program. Looking forward to new opportunities and challenges where I can effectively contribute to the growth of the organization by utilizing my skills and abilities while being innovative as well as ready to learn. </p>
+<h4>Knowledge & Skill Areas </h4>
+  <p class=""><ul>
+<li>	Equally capable of working with or without team throughout the software development lifecycle (SDLC). </li>
+<li>	Creative thinking and maintain organizational standards to requirements gathering & analysis. </li>
+<li>	Decision making and effectively Problem solving.</li>
+<li>	Quick learning & adapting ability with new tools or languages.</li>
+
+</ul>
+</p>
+<h3><br /><span class="">Education</span></h3>
+  <p class="">
+    <h5>JUN-16 TO PRESENT | CITY UNIVERSITY OF NEWYORK-LEHMAN COLLEGE, USA</h5>
+<ul>
+<li>Major: BS in Computer Science</li>
+<li>Minor: Mathematics</li>
+<li>GPA: 3.66</li>
+<li>Estimated Graduation Date: May 2018.</li>
+</ul>
+<h5>MAR-17 TO PRESENT | FREE CODE CAMP, SAN FRANCISCO, CA</h5>
+
+<ul>
+<li>Degree: Full Stack Web Development Certification</li>
+<li>Field of Study: Computer Software Engineering</li>
+<li>Estimated Graduation Date: Aug 2017.</li>
+</ul>
+<h3><br /><span class="">Work</span></h3>
+<h5>MAY-17 TO PRESENT | NYC TECH TALENT PIPELINE</h5>
+<ul>
+<li>Resident in the summer 2017 Tech Talent Pipeline Residency Program at Lehman College. Placement with HULEDET.</li>
+</ul>
+</p>
+</br>
+</br>
+
+  </div>
+{/about}
+
+
+{<headerGallery}
+<div class="jumbotron">
+              <h1><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Portfolio Gallery</h1>
+              <p>A bunch of works done by me</p>
+</div>
+
+  {/headerGallery}
+  {<gallery}
+  <div class="container">
+  <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="images/pic1.jpg" alt="sample img">
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Project link</a> </p>
+      </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="images/pic2.jpg" alt="sample img">
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Project link</a> </p>
+      </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="images/pic3.jpg" alt="sample img">
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Project link</a> </p>
+      </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="images/pic1.jpg" alt="sample img">
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Project link</a> </p>
+      </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="images/pic2.jpg" alt="sample img">
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Project link</a> </p>
+      </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="images/pic3.jpg" alt="sample img">
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Project link</a> </p>
+      </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="images/pic1.jpg" alt="sample img">
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Project link</a> </p>
+      </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="images/pic2.jpg" alt="sample img">
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Project link</a> </p>
+      </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="images/pic3.jpg" alt="sample img">
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Project link</a> </p>
+      </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    {/gallery}
+
+
+{<headerBlog}
+</br>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1><i class="fa fa-file-text-o" aria-hidden="true"></i> A Blog By Ahsan</h1>
+    <p>A blog for the code lovers </p>
+  </div>
+  </div>
+  {/headerBlog}
+{<body}
+<button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#formModal"><i class="fa fa-plus" aria-hidden="true"></i>
+Add Blog
+</button>
+</br>
+  {#blog}
+  <div class="well">
+    <h4>{topic}
+    <button class="btn btn-default pull-right" data-toggle="collapse"
+    href="#bl_{id}" aria-expanded="false" aria-controls="bl_{id}"><i class="fa fa-expand" aria-hidden="true"></i></button>
+    </h4>
+
+    <div class="collapse" id="bl_{id}">
+      <br/>
+      <br/>
+      <p><strong>Author: </strong>{name}</p>
+      <p><strong>Article: </strong>{article}</p>
+
+      <br/>
+      <hr>
+      <button class="btn btn-default edit-blog"
+      data-toggle="modal"
+      data-target="#editFormModal"
+      data-id="{id}"
+      data-name="{name}"
+      data-topic="{topic}"
+      data-article="{article}"
+
+      ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+      <button class="btn btn-danger delete-blog" data-id="{id}"><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+    </div>
+  </div>
+</br>
+
+  {/blog}
+
+  <!-- add form Modal -->
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form method="post" action="/add">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="formModalLabel">Add Blog</h4>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+              <label for="">Author Name</label>
+              <input type="text" class="form-control" name="name" value="">
+            </div>
+            <div class="form-group">
+              <label for="">Topic</label>
+              <textarea class="form-control" name="topic" ></textarea>
+            </div>
+            <div class="form-group">
+            <label for="">Article</label>
+            <textarea class="form-control" name="article" ></textarea>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <input type="submit" class="btn btn-primary" value="Save"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- edit form  -->
+<div class="modal fade" id="editFormModal" tabindex="-1" role="dialog" aria-labelledby="editFormModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form method="post" action="/edit">
+        <input type="hidden" id="edit-form-id" name="id" value="">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="editFormModalLabel">Edit Blog</h4>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+              <label for="">Author Name</label>
+              <input type="text" class="form-control" name="name" id="edit-form-name"value="">
+            </div>
+            <div class="form-group">
+              <label for="">Topic</label>
+              <textarea class="form-control" name="topic" id="edit-form-topic"></textarea>
+            </div>
+            <div class="form-group">
+            <label for="">Article</label>
+            <textarea class="form-control" name="article" id="edit-form-article"></textarea>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <input type="submit" class="btn btn-primary" value="Save"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{/body}
+
+{<links}
+<div class="footer col-xs-12">
+  <p id="links">
+  <a href="https://www.github.com/shaonahsan8"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
+  <a href="https://www.codepen.io/shaonahsan8/"><span><i class="fa fa-codepen" aria-hidden="true"></i></span></a>
+  <a href="https://www.freecodecamp.com/shaonahsan8/"><span><i class="fa fa-free-code-camp" aria-hidden="true"></i></span></a>
+  <a href="https://www.linkedin.com/in/ahsanul-islam-shaon"><span><i class="fa fa-linkedin" aria-hidden="true" ></i></span></a>
+</p>
+
+</div>
+{/links}
+{<footer}
+<hr>
+<div class="footer col-xs-12 container">
+<i class="fa fa-copyright" aria-hidden="true"></i> Ahsan 2017
+</div>
+{/footer}
