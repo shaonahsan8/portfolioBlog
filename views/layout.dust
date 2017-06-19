@@ -8,36 +8,20 @@
   </head>
   <body>
     <div class="container">
-        <div class="row">
-          <div class="col-xs-12 "id="n1">
+
             {+navbar/}
-          </div>
-          <div class="col-xs-12"id="n2">
+
             {+about/}
-          </div>
-          <div class="col-xs-12"id="n3">
-            {+headerGallery/}
-          </div>
-          <div class="col-xs-12"id="n3">
+
             {+gallery/}
-          </div>
-          <div class="col-xs-12"id="n4">
-            {+headerBlog/}
-          </div>
-          <div class="col-xs-12"id="n4">
-            {+body /}
-          </div>
-          <div class="col-xs-12"id="n1">
+
+            {+blogBody /}
+
             {+links/}
-            <hr>
+
             {+footer/}
-          </div>
 
-        </div>
     </div>
-
-
-
     <!-- First include jquery js -->
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

@@ -1,60 +1,6 @@
 body{
   padding-top:70px;
-  background: lightgrey;
-}
-#n1{
-  background-color: #6FBFD8;
-}
-#n2{
-  background-color: #5FA4B9;
-}
-#n3{
-  background-color: #528EA0;
-}
-#n4{
-  background-color: #406E7C;
-}
-.jumbotron{
-  color: #5268A4;
-  text-shadow: 1px 2px 2px grey;
-}
-.navbar-inverse .navbar-nav>li>a {
-    color: white;
-}
-.fa-pencil-square-o{
-  float: right;
-}
-
-#links span{
-  line-height: 40px;
-  text-align: center;
-  padding-right: 40px;
-}
-#links {
-  line-height: 40px;
-  text-align: center;
-
-}
-.thumbnail{
-  background-color: lightblue;
-}
-#blog-container{
-  background: #f7f7f7;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-
-}
-.completed{
-  color: gray;
-  text-decoration: line-through;
-}
-ul{
-  list-style: none;
-}
-#blog-heading{
-  background: #2980b9;
-
-}
-
-footer{
-  margin: auto;
+  background: #1F1C2C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
