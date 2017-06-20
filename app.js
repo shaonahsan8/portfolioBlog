@@ -7,11 +7,11 @@ var express = require('express'),
     app=express(),
     dust = require('dustjs-linkedin');
   // connect
-//var connection="postgres://bloguser:OnOnna143@localhost/blogtext";
+//var connect="postgres://bloguser:OnOnna143@localhost/blogtext";
 //link got from heroku postgres
-var connection="postgres://wdcizxwapncpnk:270e46134a9c3444c9fec0867d4ba6db437043800486b103dd50d58b0397095c@ec2-107-20-255-96.compute-1.amazonaws.com:5432/dec9f072ja8hip";
+var connect="postgres://wdcizxwapncpnk:270e46134a9c3444c9fec0867d4ba6db437043800486b103dd50d58b0397095c@ec2-107-20-255-96.compute-1.amazonaws.com:5432/dec9f072ja8hip";
 
-var client = new pg.Client(connection);
+var client = new pg.Client(connect);
 console.log("connected");
 
 client.connect();
@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 client.query("CREATE TABLE IF NOT EXISTS blog(id serial primary key,name varchar[255], topic text, article text, comment text)");
 
 app.get('/', function(req,res){
-pg.connect(connection, function(err, client, done){
+pg.connect(connect, function(err, client, done){
   console.log("main page");
   if(err){
     return console.error('error fetching client',err);
@@ -46,7 +46,7 @@ pg.connect(connection, function(err, client, done){
 });
 
 app.post('/add',function(req,res){
-  pg.connect(connection, function(err, client, done){
+  pg.connect(connect, function(err, client, done){
     console.log("post data to db");
     if(err){
       return console.error('error fetching client',err);
@@ -59,7 +59,7 @@ app.post('/add',function(req,res){
 });
 
 app.delete('/delete/:id',function(req,res){
-  pg.connect(connection, function(err, client, done){
+  pg.connect(connect, function(err, client, done){
       console.log("detete data to db");
     if(err){
       return console.error('error fetching client',err);
@@ -71,7 +71,7 @@ app.delete('/delete/:id',function(req,res){
 });
 
 app.post('/edit',function(req,res){
-  pg.connect(connection, function(err, client, done){
+  pg.connect(connect, function(err, client, done){
       console.log("edit data to db");
     if(err){
       return console.error('error fetching client',err);
@@ -83,7 +83,7 @@ app.post('/edit',function(req,res){
     });
 });
 app.post('/comment',function(req,res){
-  pg.connect(connection, function(err, client, done){
+  pg.connect(connect, function(err, client, done){
       console.log("post cooment data to db");
     if(err){
       return console.error('error fetching client',err);
