@@ -8,6 +8,7 @@ var express = require('express'),
     dust = require('dustjs-linkedin');
   // connect
 //var connection="postgres://bloguser:OnOnna143@localhost/blogtext";
+//link got from heroku postgres
 var connection="postgres://wdcizxwapncpnk:270e46134a9c3444c9fec0867d4ba6db437043800486b103dd50d58b0397095c@ec2-107-20-255-96.compute-1.amazonaws.com:5432/dec9f072ja8hip";
 
 var client = new pg.Client(connection);
@@ -24,7 +25,7 @@ app.use(express.static(path.join(__dirname,'public')));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
-
+//need for heroku to create DB
 client.query("CREATE TABLE IF NOT EXISTS blog(id serial primary key,name varchar[255], topic text, article text, comment text)");
 
 app.get('/', function(req,res){
@@ -46,6 +47,7 @@ pg.connect(connection, function(err, client, done){
 
 app.post('/add',function(req,res){
   pg.connect(connection, function(err, client, done){
+    console.log("post data to db");
     if(err){
       return console.error('error fetching client',err);
     }
@@ -58,6 +60,7 @@ app.post('/add',function(req,res){
 
 app.delete('/delete/:id',function(req,res){
   pg.connect(connection, function(err, client, done){
+      console.log("detete data to db");
     if(err){
       return console.error('error fetching client',err);
     }
@@ -69,6 +72,7 @@ app.delete('/delete/:id',function(req,res){
 
 app.post('/edit',function(req,res){
   pg.connect(connection, function(err, client, done){
+      console.log("edit data to db");
     if(err){
       return console.error('error fetching client',err);
     }
@@ -80,6 +84,7 @@ app.post('/edit',function(req,res){
 });
 app.post('/comment',function(req,res){
   pg.connect(connection, function(err, client, done){
+      console.log("post cooment data to db");
     if(err){
       return console.error('error fetching client',err);
     }
@@ -91,6 +96,7 @@ app.post('/comment',function(req,res){
 });
 
 //server
+//for heroku change port to = process.env.PORT
 app.listen(process.env.PORT,function(){
   console.log('Server Started on port ');
 });
