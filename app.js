@@ -35,11 +35,12 @@ pg.connect(connect, function(err, client, done){
     return console.error('error fetching client',err);
   }
   client.query(`SELECT * FROM blog`,function(err, result){
-
+  console.log("bog slected");
     if(err){
       return console.error('error running qurey', err);
     }
     res.render('index',{blog: result.rows});
+      console.log("blog render done");
       done();
     });
   });
@@ -51,7 +52,7 @@ app.post('/add',function(req,res){
     if(err){
       return console.error('error fetching client',err);
     }
-    client.query(`INSERT INTO blog(name,topic,article,comment)VALUES($1,$2,$3,$4)`,
+    client.query(`INSERT INTO blog(id,name,topic,article,comment)VALUES(DEFAULT,$1,$2,$3,$4)`,
   [req.body.name, req.body.topic,req.body.article,req.body.comment]);
   done();
   res.redirect('/');
@@ -76,7 +77,7 @@ app.post('/edit',function(req,res){
     if(err){
       return console.error('error fetching client',err);
     }
-  client.query(`UPDATE blog SET name= $1,topic=$2, article=$3, comment=$4 WHERE id=$5`,
+  client.query(`UPDATE blog SET name= $1,topic=$2, article=$3, comment=$4 WHERE id=DEFAULT`,
   [req.body.name, req.body.topic,req.body.article,req.body.comment,req.body.id]);
   done();
   res.redirect('/');
