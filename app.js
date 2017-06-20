@@ -7,12 +7,10 @@ var express = require('express'),
     app=express(),
     dust = require('dustjs-linkedin');
   // connect
-var connect="postgres://bloguser:OnOnna143@localhost/blogtext";
-// var dustjs = require('adaro');
-// var app = express();
-//
-// //app.engine('dust', dustjs.dust({});
-// app.set('view engine', 'dust');
+//var connect="postgres://bloguser:OnOnna143@localhost/blogtext";
+var client = new pg.Client(connection);
+client.connect();
+
 app.engine('dust',cons.dust);
 
 app.set('view engine','dust');
