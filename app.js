@@ -7,7 +7,9 @@ var express = require('express'),
     app=express(),
     dust = require('dustjs-linkedin');
   // connect
-//var connect="postgres://bloguser:OnOnna143@localhost/blogtext";
+//var connection="postgres://bloguser:OnOnna143@localhost/blogtext";
+var connection="postgres://wdcizxwapncpnk:270e46134a9c3444c9fec0867d4ba6db437043800486b103dd50d58b0397095c@ec2-107-20-255-96.compute-1.amazonaws.com:5432/dec9f072ja8hip";
+
 var client = new pg.Client(connection);
 client.connect();
 
@@ -84,6 +86,6 @@ app.post('/comment',function(req,res){
 });
 
 //server
-app.listen(3000,function(){
-  console.log('Server Started on port 3000');
+app.listen(process.env.PORT,function(){
+  console.log('Server Started on port ');
 });
