@@ -25,6 +25,8 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
+client.query("CREATE TABLE IF NOT EXISTS blog(id serial primary key,name varchar[255], topic text, article text, comment text)");
+
 app.get('/', function(req,res){
 pg.connect(connection, function(err, client, done){
   console.log("main page");
