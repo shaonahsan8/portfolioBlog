@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 //need for heroku to create DB
-client.query("CREATE TABLE IF NOT EXISTS blog(id serial primary key,name varchar[255], topic text, article text, comment text)");
+client.query("CREATE TABLE IF NOT EXISTS blog(id serial primary key,name char[255], topic text, article text, comment text)");
 
 app.get('/', function(req,res){
 pg.connect(connect, function(err, client, done){
@@ -34,7 +34,7 @@ pg.connect(connect, function(err, client, done){
   if(err){
     return console.error('error fetching client',err);
   }
-  client.query(`SELECT * FROM blog`,function(err, result){
+  client.query("SELECT * FROM blog",function(err, result){
   console.log("bog slected");
     if(err){
       return console.error('error running qurey', err);
@@ -52,7 +52,7 @@ app.post('/add',function(req,res){
     if(err){
       return console.error('error fetching client',err);
     }
-    client.query(`INSERT INTO blog(id,name,topic,article,comment)VALUES(DEFAULT,$1,$2,$3,$4)`,
+    client.query("INSERT INTO blog(id,name,topic,article,comment)VALUES(DEFAULT,$1,$2,$3,$4"),
   [req.body.name, req.body.topic,req.body.article,req.body.comment]);
   done();
   res.redirect('/');
@@ -98,6 +98,6 @@ app.post('/comment',function(req,res){
 
 //server
 //for heroku change port to = process.env.PORT
-app.listen(process.env.PORT,function(){
-  console.log('Server Started on port ');
+app.listen(process.env.PORT || 3000, function(){
+  console.log(‘listening on’, app.address().port);
 });
