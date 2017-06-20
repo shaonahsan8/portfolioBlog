@@ -11,6 +11,8 @@ var express = require('express'),
 var connection="postgres://wdcizxwapncpnk:270e46134a9c3444c9fec0867d4ba6db437043800486b103dd50d58b0397095c@ec2-107-20-255-96.compute-1.amazonaws.com:5432/dec9f072ja8hip";
 
 var client = new pg.Client(connection);
+console.log("connected");
+
 client.connect();
 
 app.engine('dust',cons.dust);
@@ -25,6 +27,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 
 app.get('/', function(req,res){
 pg.connect(connect, function(err, client, done){
+  console.log("main page");
   if(err){
     return console.error('error fetching client',err);
   }
