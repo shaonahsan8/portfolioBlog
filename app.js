@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
 app.get('/', function(req,res){
-pg.connect(connect, function(err, client, done){
+pg.connect(connection, function(err, client, done){
   console.log("main page");
   if(err){
     return console.error('error fetching client',err);
@@ -43,7 +43,7 @@ pg.connect(connect, function(err, client, done){
 });
 
 app.post('/add',function(req,res){
-  pg.connect(connect, function(err, client, done){
+  pg.connect(connection, function(err, client, done){
     if(err){
       return console.error('error fetching client',err);
     }
@@ -55,7 +55,7 @@ app.post('/add',function(req,res){
 });
 
 app.delete('/delete/:id',function(req,res){
-  pg.connect(connect, function(err, client, done){
+  pg.connect(connection, function(err, client, done){
     if(err){
       return console.error('error fetching client',err);
     }
@@ -66,7 +66,7 @@ app.delete('/delete/:id',function(req,res){
 });
 
 app.post('/edit',function(req,res){
-  pg.connect(connect, function(err, client, done){
+  pg.connect(connection, function(err, client, done){
     if(err){
       return console.error('error fetching client',err);
     }
@@ -77,7 +77,7 @@ app.post('/edit',function(req,res){
     });
 });
 app.post('/comment',function(req,res){
-  pg.connect(connect, function(err, client, done){
+  pg.connect(connection, function(err, client, done){
     if(err){
       return console.error('error fetching client',err);
     }
